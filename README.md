@@ -7,18 +7,18 @@ A minimal card with manual setup
 * @author: Elmar Hinz
 * @workspace: `conf/www/tutor`
 
-The target of this tutorial is, to show some minimal steps to be done to get
-output from a self card written by yourself. The setup is still done manually to
-understand the technical requirements. More advanced solutions will be covered
-by future tutorials. Please understand minimal as a reasonable minimum to get
-started, not as the absolute minimum.
+The target of this tutorial is to show minimal steps to be done to get hello
+world output from a card written all by yourself. The setup is still done
+manually to understand the technical requirements. More advanced solutions will
+be covered by future tutorials. Please understand minimal as a reasonable
+minimum to get started, not as the absolute minimum.
 
 ## Prerequisites
 
-* A development environment (see tutorial 1)
-* Prerequisites named there
-* Basic skills of JavaScript
-* A workspace `conf/www/tutor`
+* a development environment (see tutorial 1)
+* the Prerequisites named there
+* basic skills of JavaScript
+* a workspace `conf/www/tutor`
 
 ## Cloning the Repository
 
@@ -26,12 +26,15 @@ You may clone this repository into your workspace and follow along.
 Alternatively you may want to write the code yourself, to get a deeper effect of
 learning. Just decide what works best for you.
 
-Fork your instance of the repository on Github. Change into the workspace. On
-the command-line call `git clone <URL>`. Use the `URL` Github does name, when
-you click the button `Code`. If your setup is well done, you should prefer `SSH`
-over `HTTPS`. This allows you to easily push to your repository.
+Fork the repository on Github into your own instance. Open the workspace
+directory in the command-line. Call `git clone <URL>`. Use the `URL` Github does
+give you, when you click the button `Code`. If your setup is well done, you
+should prefer `SSH` over `HTTPS`. This allows you to easily push to your
+repository.
 
 ## The Cards Code
+
+Find the code in the file named `card.js` alongside with this README.
 
 ### Configuration
 
@@ -49,7 +52,7 @@ setConfig(config) {
 ```
 
 Our card requires an entity. If it is missing, the method throws an error. It
-will be catched to be displayed in a friendly format to guide the user.
+will be caught to be displayed in a friendly format to guide the user (see below).
 
 ### View
 
@@ -91,7 +94,7 @@ tree.
 
 ### Visit the Official Documentation
 
-You should know [the official source of the
+You should know [the official
 documentation](https://developers.home-assistant.io/docs/frontend/custom-ui/custom-card),
 too. This tutorial is based upon it. It defines a method `getCardSize()` in
 addition, you should know about. This is not required for a hello world example
