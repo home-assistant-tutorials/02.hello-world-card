@@ -38,21 +38,16 @@ Find the code in the file named `card.js` alongside with this README.
 
 ### Configuration
 
-While setting up your card in the dashboard `setConfig()` gets triggered upon
-edit with the configuration data. You consume it to set up the internal
-configuration of the object. You may want to validate the data, too.
+While setting up your card in the dashboard, `setConfig()` gets triggered upon
+edit with the configuration data. This method is required. You use it here to
+update the internal config property. In the second tutorial, you will go a step
+ahead.
 
 ```js
-setConfig(config) {
-    if (!config.entity) {
-        throw new Error('Please define an entity!');
+    setConfig(config) {
+        this.config = config;
     }
-    this.config = config;
-}
 ```
-
-Our card requires an entity. If it is missing, the method throws an error. It
-will be caught to be displayed in a friendly format to guide the user (see below).
 
 ### View
 
@@ -139,10 +134,6 @@ is the type you did register in the last line of the `card.js` file:
 ```js
 customElements.define('hello-world-card', HelloWorldCard);
 ```
-
-If you forget to define an entity, you will see the error message, that you did define in `card.js`. 
-
-![entity message](img/entity-msg.png)
 
 If everything went well so far, congratulations! You should now see the output of the first card you created yourself. Try different entities.
 

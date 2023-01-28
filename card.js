@@ -3,10 +3,8 @@ class HelloWorldCard extends HTMLElement {
     config;
     content;
 
+    // required
     setConfig(config) {
-        if (!config.entity) {
-            throw new Error('Please define an entity!');
-        }
         this.config = config;
     }
 
@@ -30,7 +28,6 @@ class HelloWorldCard extends HTMLElement {
             <p>The ${entityId} is ${stateStr}.</p>
         `;
     }
-
 }
 
 customElements.define('hello-world-card', HelloWorldCard);
