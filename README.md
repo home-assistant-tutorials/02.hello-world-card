@@ -36,6 +36,17 @@ repository.
 
 Find the code in the file named `card.js` alongside with this README.
 
+### A custom element
+
+The card has to be a [***custom
+element***](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements).
+The class inherits from `HTMLElement` or any equivalent parent class. Often you
+will find cards, that inherit from [`LitElement`](https://lit.dev).
+
+```js
+class HelloWorldCard extends HTMLElement {
+```
+
 ### Configuration
 
 While setting up your card in the dashboard, `setConfig()` gets triggered upon
