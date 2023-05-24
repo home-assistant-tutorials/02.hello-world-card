@@ -108,7 +108,7 @@ and I avoid the discussion if pixels are a suitable unity for HTML at all.
 
 ## Running the Code
 
-### Adding the Ressource
+### Adding the Resource
 
 Open your admin account of the development environment in the web browser. Did
 you already unlock **Advanced Mode**?
